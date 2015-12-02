@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5230CE4D1B8B85A80011D39A /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5230CE491B8B85A80011D39A /* cardflip.wav */; };
+		5230CE4E1B8B85A80011D39A /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5230CE4A1B8B85A80011D39A /* dingcorrect.wav */; };
+		5230CE4F1B8B85A80011D39A /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5230CE4B1B8B85A80011D39A /* dingwrong.wav */; };
+		5230CE501B8B85A80011D39A /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5230CE4C1B8B85A80011D39A /* shuffle.wav */; };
+		5230CE521B8B85E70011D39A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5230CE511B8B85E70011D39A /* AVFoundation.framework */; };
+		529D6E571B703BD900F15014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D6E561B703BD900F15014 /* AppDelegate.swift */; };
+		529D6E591B703BD900F15014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D6E581B703BD900F15014 /* ViewController.swift */; };
+		529D6E5C1B703BD900F15014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529D6E5A1B703BD900F15014 /* Main.storyboard */; };
+		529D6E5E1B703BD900F15014 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529D6E5D1B703BD900F15014 /* Images.xcassets */; };
+		529D6E611B703BD900F15014 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529D6E5F1B703BD900F15014 /* LaunchScreen.xib */; };
+		529D6E6D1B703BD900F15014 /* MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D6E6C1B703BD900F15014 /* MatchTests.swift */; };
+		529D6E771B703E7500F15014 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D6E761B703E7500F15014 /* Card.swift */; };
+		529D6E791B703F2D00F15014 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D6E781B703F2D00F15014 /* GameModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		529D6E671B703BD900F15014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 529D6E491B703BD800F15014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529D6E501B703BD900F15014;
+			remoteInfo = Match;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5230CE491B8B85A80011D39A /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		5230CE4A1B8B85A80011D39A /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
+		5230CE4B1B8B85A80011D39A /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		5230CE4C1B8B85A80011D39A /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		5230CE511B8B85E70011D39A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		529D6E511B703BD900F15014 /* Nancy's Card Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nancy's Card Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		529D6E551B703BD900F15014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529D6E561B703BD900F15014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		529D6E581B703BD900F15014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		529D6E5B1B703BD900F15014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		529D6E5D1B703BD900F15014 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		529D6E601B703BD900F15014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		529D6E661B703BD900F15014 /* Nancy's Card Game.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nancy's Card Game.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		529D6E6B1B703BD900F15014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529D6E6C1B703BD900F15014 /* MatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTests.swift; sourceTree = "<group>"; };
+		529D6E761B703E7500F15014 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		529D6E781B703F2D00F15014 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		529D6E4E1B703BD900F15014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5230CE521B8B85E70011D39A /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529D6E631B703BD900F15014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		529D6E481B703BD800F15014 = {
+			isa = PBXGroup;
+			children = (
+				5230CE511B8B85E70011D39A /* AVFoundation.framework */,
+				529D6E531B703BD900F15014 /* Match */,
+				529D6E691B703BD900F15014 /* MatchTests */,
+				529D6E521B703BD900F15014 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		529D6E521B703BD900F15014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				529D6E511B703BD900F15014 /* Nancy's Card Game.app */,
+				529D6E661B703BD900F15014 /* Nancy's Card Game.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		529D6E531B703BD900F15014 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				529D6E561B703BD900F15014 /* AppDelegate.swift */,
+				529D6E581B703BD900F15014 /* ViewController.swift */,
+				529D6E761B703E7500F15014 /* Card.swift */,
+				529D6E781B703F2D00F15014 /* GameModel.swift */,
+				529D6E5A1B703BD900F15014 /* Main.storyboard */,
+				529D6E5D1B703BD900F15014 /* Images.xcassets */,
+				529D6E5F1B703BD900F15014 /* LaunchScreen.xib */,
+				529D6E541B703BD900F15014 /* Supporting Files */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		529D6E541B703BD900F15014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5230CE491B8B85A80011D39A /* cardflip.wav */,
+				5230CE4A1B8B85A80011D39A /* dingcorrect.wav */,
+				5230CE4B1B8B85A80011D39A /* dingwrong.wav */,
+				5230CE4C1B8B85A80011D39A /* shuffle.wav */,
+				529D6E551B703BD900F15014 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		529D6E691B703BD900F15014 /* MatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				529D6E6C1B703BD900F15014 /* MatchTests.swift */,
+				529D6E6A1B703BD900F15014 /* Supporting Files */,
+			);
+			path = MatchTests;
+			sourceTree = "<group>";
+		};
+		529D6E6A1B703BD900F15014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				529D6E6B1B703BD900F15014 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		529D6E501B703BD900F15014 /* Nancy's Card Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529D6E701B703BD900F15014 /* Build configuration list for PBXNativeTarget "Nancy's Card Game" */;
+			buildPhases = (
+				529D6E4D1B703BD900F15014 /* Sources */,
+				529D6E4E1B703BD900F15014 /* Frameworks */,
+				529D6E4F1B703BD900F15014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nancy's Card Game";
+			productName = Match;
+			productReference = 529D6E511B703BD900F15014 /* Nancy's Card Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		529D6E651B703BD900F15014 /* Nancy's Card GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529D6E731B703BD900F15014 /* Build configuration list for PBXNativeTarget "Nancy's Card GameTests" */;
+			buildPhases = (
+				529D6E621B703BD900F15014 /* Sources */,
+				529D6E631B703BD900F15014 /* Frameworks */,
+				529D6E641B703BD900F15014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				529D6E681B703BD900F15014 /* PBXTargetDependency */,
+			);
+			name = "Nancy's Card GameTests";
+			productName = MatchTests;
+			productReference = 529D6E661B703BD900F15014 /* Nancy's Card Game.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		529D6E491B703BD800F15014 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Trieu Nguyen";
+				TargetAttributes = {
+					529D6E501B703BD900F15014 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2ABTSMS6XS;
+					};
+					529D6E651B703BD900F15014 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 529D6E501B703BD900F15014;
+					};
+				};
+			};
+			buildConfigurationList = 529D6E4C1B703BD800F15014 /* Build configuration list for PBXProject "Nancy's Card Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 529D6E481B703BD800F15014;
+			productRefGroup = 529D6E521B703BD900F15014 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				529D6E501B703BD900F15014 /* Nancy's Card Game */,
+				529D6E651B703BD900F15014 /* Nancy's Card GameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		529D6E4F1B703BD900F15014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529D6E5C1B703BD900F15014 /* Main.storyboard in Resources */,
+				5230CE4E1B8B85A80011D39A /* dingcorrect.wav in Resources */,
+				5230CE4F1B8B85A80011D39A /* dingwrong.wav in Resources */,
+				5230CE501B8B85A80011D39A /* shuffle.wav in Resources */,
+				5230CE4D1B8B85A80011D39A /* cardflip.wav in Resources */,
+				529D6E611B703BD900F15014 /* LaunchScreen.xib in Resources */,
+				529D6E5E1B703BD900F15014 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529D6E641B703BD900F15014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		529D6E4D1B703BD900F15014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529D6E591B703BD900F15014 /* ViewController.swift in Sources */,
+				529D6E791B703F2D00F15014 /* GameModel.swift in Sources */,
+				529D6E771B703E7500F15014 /* Card.swift in Sources */,
+				529D6E571B703BD900F15014 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529D6E621B703BD900F15014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529D6E6D1B703BD900F15014 /* MatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		529D6E681B703BD900F15014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529D6E501B703BD900F15014 /* Nancy's Card Game */;
+			targetProxy = 529D6E671B703BD900F15014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		529D6E5A1B703BD900F15014 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529D6E5B1B703BD900F15014 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		529D6E5F1B703BD900F15014 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529D6E601B703BD900F15014 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		529D6E6E1B703BD900F15014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		529D6E6F1B703BD900F15014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		529D6E711B703BD900F15014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Match/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codewithchris.com.card;
+				PRODUCT_NAME = "Nancy's Card Game";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		529D6E721B703BD900F15014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Match/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codewithchris.com.card;
+				PRODUCT_NAME = "Nancy's Card Game";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		529D6E741B703BD900F15014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Nancy's Card Game";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nancy's Card Game.app/Nancy's Card Game";
+			};
+			name = Debug;
+		};
+		529D6E751B703BD900F15014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Nancy's Card Game";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nancy's Card Game.app/Nancy's Card Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		529D6E4C1B703BD800F15014 /* Build configuration list for PBXProject "Nancy's Card Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529D6E6E1B703BD900F15014 /* Debug */,
+				529D6E6F1B703BD900F15014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529D6E701B703BD900F15014 /* Build configuration list for PBXNativeTarget "Nancy's Card Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529D6E711B703BD900F15014 /* Debug */,
+				529D6E721B703BD900F15014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529D6E731B703BD900F15014 /* Build configuration list for PBXNativeTarget "Nancy's Card GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529D6E741B703BD900F15014 /* Debug */,
+				529D6E751B703BD900F15014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 529D6E491B703BD800F15014 /* Project object */;
+}
